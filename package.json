@@ -1,0 +1,23 @@
+{
+  "name": "e-pilgubbu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "animate.css": "^3.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r1ckysy/e-pilgubbu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r1ckysy/e-pilgubbu/issues"
+  },
+  "homepage": "https://github.com/r1ckysy/e-pilgubbu#readme"
+}
