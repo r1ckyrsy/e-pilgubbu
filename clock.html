@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SVG clock UI</title>
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  
+</head>
+
+<body>
+
+	<svg>
+		<defs>
+			<filter id="glow">
+					<feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+					<feMerge>
+							<feMergeNode in="coloredBlur"/>
+							<feMergeNode in="SourceGraphic"/>
+					</feMerge>
+			</filter>		
+			
+			<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+				<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="shadow"/>
+				<feOffset dx="1" dy="1"/>
+				<feMerge>
+					<feMergeNode/>
+					<feMergeNode in="SourceGraphic"/>
+				</feMerge>
+			</filter>		
+			
+		</defs>
+		
+		<!-- Clock objects -->
+		<circle class="clockCircle hour" cx="175" cy="175" r="150" stroke-width="6" />
+		<path id="arcHour" class="clockArc hour" stroke-width="6" stroke-linecap="round" filter="url(#glow)" />
+		<circle class="clockDot hour" r="8" filter="url(#glow)" />
+
+		<circle class="clockCircle minute" cx="175" cy="175" r="170" stroke-width="3" />
+		<path id="arcMinute" class="clockArc minute" stroke-width="3" stroke-linecap="round" filter="url(#glow)" />
+		<circle class="clockDot minute" r="5" filter="url(#glow)" />
+		
+		<!-- Caption objects -->
+		<text id="time" class="caption timeText" x="175" y="175" stroke-width="0" text-anchor="middle" alignment-baseline="middle"  filter="url(#shadow)"></text>
+		
+	</svg>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.min.js'></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+    <script  src="assets/js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900|Dosis:300,400,600,700,800|Droid+Sans:400,700|Lato:300,400,700,900|PT+Sans:400,700|Ubuntu:300,400,500,700|Open+Sans:400,300,600,700|Roboto:400,300,500,700,900|Roboto+Condensed:400,300,700|Open+Sans+Condensed:300,700|Play:400,700|Maven+Pro:400,500,700,900&subset=latin,latin-ext);
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #222;
+  overflow: hidden;
+}
+
+svg {
+  width: 350px;
+  height: 350px;
+}
+
+.clockCircle {
+  fill: none;
+  stroke: #2a2a2a;
+}
+
+.clockArc {
+  fill: none;
+  stroke: #1bbccb;
+}
+
+.clockDot {
+  fill: #e9fafc;
+}
+
+.caption {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  fill: White;
+}
+
+.timeText {
+  font-family: "Open Sans";
+  font-size: 5rem;
+  font-weight: 600;
+  fill: White;
+}
