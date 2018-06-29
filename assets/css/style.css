@@ -1,35 +1,45 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900|Dosis:300,400,600,700,800|Droid+Sans:400,700|Lato:300,400,700,900|PT+Sans:400,700|Ubuntu:300,400,500,700|Open+Sans:400,300,600,700|Roboto:400,300,500,700,900|Roboto+Condensed:400,300,700|Open+Sans+Condensed:300,700|Play:400,700|Maven+Pro:400,500,700,900&subset=latin,latin-ext);
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #222;
+	padding: 0;
+	margin: 0;
+	background-color: #222;
 }
 
 .clockCircle {
-  fill: none;
-  stroke: #2a2a2a;
+	fill: none;
+	stroke: #2b2b2b;
+}
+
+.clockCircle.minute {
+	fill: rgba(0,0,0,0.075)
 }
 
 .clockArc {
-  fill: none;
-  stroke: #1bbccb;
+	fill: none;
+	stroke: #3199ff;
 }
 
 .clockDot {
-  fill: #e9fafc;
-  filter: blur(2px);
-  stroke: SlateGray;
+	fill: #e9fafc;
+	filter: blur(2px);
+	stroke: SlateGray;
 }
 
+#clock {
+	font-family: "Open Sans";
+	stroke: black;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 0.1px;
+}
 .timeText {
-  font-family: "Open Sans";
-  font-weight: 300;
+	font-weight: 300;
 }
 
-.timeText.light {
-  fill: Black;
+.dark {
+	fill: #ddd;
 }
 
-.timeText.dark {
-  fill: White;
+.light {
+	fill: #2f2f2f;
 }
