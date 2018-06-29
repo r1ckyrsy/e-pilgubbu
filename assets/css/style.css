@@ -5,11 +5,6 @@ body {
   background-color: #222;
 }
 
-svg {
-  width: 360px;
-  height: 360px;
-}
-
 .clockCircle {
   fill: none;
   stroke: #2a2a2a;
@@ -22,11 +17,19 @@ svg {
 
 .clockDot {
   fill: #e9fafc;
+  filter: blur(2px);
+  stroke: SlateGray;
 }
 
 .timeText {
   font-family: "Open Sans";
-  font-size: 5rem;
   font-weight: 300;
+}
+
+.timeText.light {
+  fill: Black;
+}
+
+.timeText.dark {
   fill: White;
 }
